@@ -23,8 +23,9 @@ protected:
 	class UTextBlock* RandomNumberLabel;
 	
 	UPROPERTY(meta = (BindWidget))
-		class UButton* GenerateButton;
+	class UButton* GenerateButton;
 
 	UFUNCTION()
 		void OnGenerateButtonClicked();
+
 };
