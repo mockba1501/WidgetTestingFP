@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Countdown.generated.h"
+#include "CountDown.generated.h"
 
 UCLASS()
 class WIDGETTESTINGFP_API ACountDown : public AActor
@@ -23,13 +23,17 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	//How long, in seconds, it will count down
+	UPROPERTY(EditAnywhere)
 	int32 CountDownTime;
-	UTextRenderComponent* CountDownText;
+
+	class UTextRenderComponent* CountDownText;
 
 	void UpdateTimerDisplay();
 
 	void AdvanceTimer();
 
+	//UFUNCTION(BlueprintNativeEvent)
 	void CountDownHasFinished();
 
 	FTimerHandle CountDownTimerHandle;
