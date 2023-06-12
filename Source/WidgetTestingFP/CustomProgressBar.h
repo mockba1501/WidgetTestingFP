@@ -21,5 +21,6 @@ protected:
 	UPROPERTY(EditAnywhere, meta = (BindWidget))
 	class UProgressBar* EnergyBar;
 
-
+	//Get reference of playerCharacter (Is jumping and not falling) Increment the Health value
+	//Bind the progress bars with the actual variables of health and energy
 };
