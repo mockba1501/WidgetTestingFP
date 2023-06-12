@@ -33,8 +33,9 @@ public:
 
 	void AdvanceTimer();
 
-	//UFUNCTION(BlueprintNativeEvent)
+	UFUNCTION(BlueprintNativeEvent)
 	void CountDownHasFinished();
+	virtual void CountDownHasFinished_Implementation();
 
 	FTimerHandle CountDownTimerHandle;
 };

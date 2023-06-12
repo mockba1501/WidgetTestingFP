@@ -50,8 +50,15 @@ void ACountDown::AdvanceTimer()
 	}
 }
 
+/*
 void ACountDown::CountDownHasFinished()
 {
 	CountDownText->SetText(FText::FromString("Done Counting!!"));
+}
+*/
+void ACountDown::CountDownHasFinished_Implementation()
+{
+	CountDownText->SetText(FText::FromString("Done Counting!!"));
+
 }
 
