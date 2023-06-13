@@ -27,6 +27,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	int32 CountDownTime;
 
+	UPROPERTY(Instanced, VisibleAnywhere)
 	class UTextRenderComponent* CountDownText;
 
 	void UpdateTimerDisplay();

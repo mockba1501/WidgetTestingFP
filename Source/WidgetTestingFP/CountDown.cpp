@@ -13,9 +13,12 @@ ACountDown::ACountDown()
 	CountDownText = CreateDefaultSubobject<UTextRenderComponent>(TEXT("CountDownNumber"));
 	CountDownText->SetHorizontalAlignment(EHTA_Center);
 	CountDownText->SetWorldSize(150.0f);
+	CountDownText->SetRelativeRotation(FRotator(0.0f, 180.0f, 0.0f));
 
+	//CountDownText->AddLocalTransform()
 	RootComponent = CountDownText;
-	CountDownTime = 3;
+	RootComponent->AddRelativeLocation(FVector(2000.f, 1000.f, 300.f));
+	CountDownTime = 5;
 }
 
 // Called when the game starts or when spawned
