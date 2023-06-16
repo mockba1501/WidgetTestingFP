@@ -18,7 +18,7 @@ ACountDown::ACountDown()
 	//CountDownText->AddLocalTransform()
 	RootComponent = CountDownText;
 	RootComponent->AddRelativeLocation(FVector(2000.f, 1000.f, 300.f));
-	CountDownTime = 5;
+	//CountDownTime = 5;
 }
 
 // Called when the game starts or when spawned

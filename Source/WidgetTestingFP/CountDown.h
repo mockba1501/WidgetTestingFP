@@ -27,7 +27,10 @@ public:
 	UPROPERTY(EditAnywhere)
 	int32 CountDownTime;
 
-	UPROPERTY(Instanced, VisibleAnywhere)
+	UPROPERTY(EditAnywhere)
+	FVector TimerPostion;
+
+	UPROPERTY(Instanced, EditAnywhere)
 	class UTextRenderComponent* CountDownText;
 
 	void UpdateTimerDisplay();
